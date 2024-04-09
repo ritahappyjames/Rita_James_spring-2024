@@ -19,7 +19,7 @@ import CurrentUser from "@/components/global/CurrentUser";
 // assets
 
 // Icons
-import { HiHome } from "react-icons/hi2";
+import { HiHome, HiNewspaper } from "react-icons/hi2";
 import {
   MdKeyboardArrowLeft,
   MdKeyboardArrowRight,
@@ -32,6 +32,7 @@ import {
   MdOutlineHelp,
   MdSettings,
   MdLogout,
+  MdWork,
 } from "react-icons/md";
 import { BiLink } from "react-icons/bi";
 import { FaBuildingColumns } from "react-icons/fa6";
@@ -144,6 +145,56 @@ const SideBar = () => {
             } transition-opacity `}
           >
             Students
+          </li>
+        </Link>
+        <Link
+          onClick={() => setLoading(true, 0, 2000)}
+          href={"/news"}
+          className={`relative h-full xl:h-[3.5rem] w-full flex items-center justify-center rounded-md hover:text-[#f4b461] ${
+            currentPathname === "/news"
+              ? "bg-[#6e1d2a9f] text-[#f4b461]"
+              : undefined
+          }`}
+        >
+          <li
+            className={`absolute left-0 h-full w-full flex items-center text-[1.4rem] ${
+              isSidebarOpen ? "justify-start pl-6" : "justify-center pl-0"
+            } `}
+          >
+            <HiNewspaper />
+
+          </li>
+          <li
+            className={`absolute right-0 h-full w-full flex items-center justify-center text-[1.1rem] whitespace-nowrap pr-[1.05rem] ${
+              isSidebarOpen ? "opacity-100 delay-200" : "opacity-0"
+            } transition-opacity `}
+          >
+            News
+          </li>
+        </Link>
+        <Link
+          onClick={() => setLoading(true, 0, 2000)}
+          href={"/student"}
+          className={`relative h-full xl:h-[3.5rem] w-full flex items-center justify-center rounded-md hover:text-[#f4b461] ${
+            currentPathname === "/student"
+              ? "bg-[#6e1d2a9f] text-[#f4b461]"
+              : undefined
+          }`}
+        >
+          <li
+            className={`absolute left-0 h-full w-full flex items-center text-[1.4rem] ${
+              isSidebarOpen ? "justify-start pl-6" : "justify-center pl-0"
+            } `}
+          >
+         <MdWork />
+
+          </li>
+          <li
+            className={`absolute right-0 h-full w-full flex items-center justify-center text-[1.1rem] whitespace-nowrap pr-[1.05rem] ${
+              isSidebarOpen ? "opacity-100 delay-200" : "opacity-0"
+            } transition-opacity `}
+          >
+            Interships
           </li>
         </Link>
         <Link

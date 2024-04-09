@@ -25,6 +25,7 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
     "/student",
     "/calendar",
     "/userProfile",
+    "/news",
   ];
 
   const { isSidebarOpen, isSidebarHidden } = useGlobalSideBar();
