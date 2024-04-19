@@ -198,7 +198,7 @@ const SideBar = () => {
           </li>
         </Link>
         <Link
-          href={""}
+          href={"/interships"}
           className={`relative h-full xl:h-[3.5rem] w-full invisible flex items-center justify-center rounded-md hover:text-[#f4b461] ${
             currentPathname === "" ? "bg-[#6e1d2a9f] text-[#f4b461]" : undefined
           }`}
@@ -240,6 +240,29 @@ const SideBar = () => {
           </li>
         </Link>
         <Link
+          href={""}
+          className={`relative h-full xl:h-[3.5rem] w-full invisible flex items-center justify-center rounded-md text-[#fefefe93] ${
+            currentPathname === "" ? "bg-[#6e1d2a9f] text-[#f4b461]" : undefined
+          }`}
+        >
+          <li
+            className={`absolute left-0 h-full w-full flex items-center text-[1.1rem] ${
+              isSidebarOpen
+                ? "justify-start pl-[1.7rem]"
+                : "justify-center pl-0"
+            } `}
+          >
+            <FaBuildingColumns />
+          </li>
+          <li
+            className={`absolute right-0 h-full w-full flex items-center justify-center text-[1.1rem] whitespace-nowrap ${
+              isSidebarOpen ? "opacity-100 delay-200" : "opacity-0"
+            } transition-opacity `}
+          >
+            Academics
+          </li>
+        </Link>
+            <Link
           href={""}
           className={`relative h-full xl:h-[3.5rem] w-full invisible flex items-center justify-center rounded-md text-[#fefefe93] ${
             currentPathname === "" ? "bg-[#6e1d2a9f] text-[#f4b461]" : undefined
