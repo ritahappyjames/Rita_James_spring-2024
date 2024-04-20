@@ -26,6 +26,7 @@ function PageWrapper({ children }: { children: React.ReactNode }) {
     "/calendar",
     "/userProfile",
     "/news",
+    "/internships",
     
   ];
 

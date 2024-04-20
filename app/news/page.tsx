@@ -7,10 +7,10 @@ import Image from 'next/image';
 import { useGlobalLoading } from '@/globalStates/useGlobalLoading';
 
 
-import NewsItem from '@/components/NewsItems';
+import NewsItems from '@/components/NewsItems';
 
 
-import newsBackground from '../../public/assets/newsBackground.jpg';
+import newsBackground from '../../public/assets/newsBackground.png';
 
 
 type NewsData = {
@@ -34,7 +34,7 @@ const NewsPage = () => {
         setLoading(true);
         setTimeout(() => {
             const fetchedNews = [
-                { id: 1, title: 'New Research Lab Opens', summary: 'A new state-of-the-art research lab located in Yancy building', imageUrl: '/assets/cis.jpeg', fullText: 'Here at shaw university we are always striving to give our students the best recourses needed to be successful in courses and in life. We have now adding a new computer lab including the newest and latest technology needed to keep students up to date with the everchanging innovations availble. This Lab also included a state of the art, real time cybersecurity tracker which comeplements our new cyber security courses now offered at Shaw University.', fullText2: ' ', linkUrl: 'https://www.shawcomputerscience.com', linkText: 'Learn more about the lab' },
+                { id: 1, title: 'New Research Lab Opens', summary: 'A new state-of-the-art research lab located in Yancy building', imageUrl: '/assets/cis.jpg', fullText: 'Here at shaw university we are always striving to give our students the best recourses needed to be successful in courses and in life. We have now adding a new computer lab including the newest and latest technology needed to keep students up to date with the everchanging innovations availble. This Lab also included a state of the art, real time cybersecurity tracker which comeplements our new cyber security courses now offered at Shaw University.', fullText2: ' ', linkUrl: 'https://www.shawcomputerscience.com', linkText: 'Learn more about the lab' },
                 { id: 2, title: 'NSBE Conference 2025', summary: 'Join us for the annual National Society of Black Engineers conference', imageUrl: '/assets/nsbe.png', fullText: 'Shaw University has recently join NSBE with our first chapter being created in 2023. We are very excited about the knowledge and oppurtunities this will provide for out students. We plan on making our way to the 2025 NSBE convention and will update students as dates and plans are avalible. In the meantime look at the NSBE webpage to get familiar with there goals and accolades.', fullText2: ' ', linkUrl: 'https://www.nsbe.org', linkText: 'Visit NSBE Conference site' },
                 { id: 3, title: 'Cyber Security', summary: 'We are now offering cyber security courses in the CSC program!', imageUrl: '/assets/comSciWallPic.jpg', fullText: 'Cybersecurity is a key factor in the everyday life of almost every person on the earth. This carrer path isnt just sought after for well pay but also because cybersecurity is vital and nescessary for the safety of the nation and its civillians. If you are interested in cybersecurity then look no further as Shaw University now offers a cybersecurity degree. You can click the link below to learn more about the program.', fullText2: ' ', linkUrl: 'https://www.shawu.edu/archives/2021/shaw_university_has_established_the_center_for_cybersecurity_education_and_research_(c-cer)/', linkText: 'Cyber Security courses details' },
             ];

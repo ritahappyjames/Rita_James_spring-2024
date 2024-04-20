@@ -174,9 +174,9 @@ const SideBar = () => {
         </Link>
         <Link
           onClick={() => setLoading(true, 0, 2000)}
-          href={"/student"}
+          href={"/internships"}
           className={`relative h-full xl:h-[3.5rem] w-full flex items-center justify-center rounded-md hover:text-[#f4b461] ${
-            currentPathname === "/student"
+            currentPathname === "/internships"
               ? "bg-[#6e1d2a9f] text-[#f4b461]"
               : undefined
           }`}
@@ -194,13 +194,13 @@ const SideBar = () => {
               isSidebarOpen ? "opacity-100 delay-200" : "opacity-0"
             } transition-opacity `}
           >
-            Interships
+            Internships
           </li>
         </Link>
         <Link
           href={"/interships"}
           className={`relative h-full xl:h-[3.5rem] w-full invisible flex items-center justify-center rounded-md hover:text-[#f4b461] ${
-            currentPathname === "" ? "bg-[#6e1d2a9f] text-[#f4b461]" : undefined
+            currentPathname === "/interships" ? "bg-[#6e1d2a9f] text-[#f4b461]" : undefined
           }`}
         >
           <li
